@@ -1,0 +1,34 @@
+.footer{
+    align-items: center;
+    background-color: black;
+    color : white;
+    width: 100vw;
+    text-align: center;
+     display: flex;
+      flex-direction: column; 
+      gap: 20px; 
+      border-top: 1px solid green;
+}
+.heading{
+   font-size: 24px;
+  font-weight: bold;
+ 
+}
+.accodiance{
+  background-color: #000000 !important;
+  color: white !important;
+  border-radius: 8px !important;
+  border: 1px solid #333;
+  text-align: center;
+
+}
+.question{
+      font-size: 16px;
+      font-weight: 500;
+}
+.answer{
+  background-color: White;
+  color:black;
+  font-size: 16px;
+  font-weight: 500;
+}

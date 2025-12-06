@@ -1,0 +1,63 @@
+.section {
+  margin: 20px 0;
+  padding: 0 20px;
+  color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expandBtn {
+  background-color: #34c94b;
+  border: none;
+  padding: 6px 12px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font:'Poping';
+}
+
+.sliderWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 16px;
+  padding: 10px 0;
+}
+
+.slider > * {
+  flex: 0 0 auto;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.arrowBtn {
+  background-color: #34c94b;
+  border: none;
+  color: white;
+  font-size: 18px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+.grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px;
+}
