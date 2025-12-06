@@ -9,10 +9,7 @@ function App() {
     <div className="App">
         <Navbar />
         <Hero />
-        <Section
-        title = "Top Albums"
-        fetchUrl="https://qtify-backend.labs.crio.do/albums/top"
-      />
+        <Section />
       <Footer/>
     </div>
   );
