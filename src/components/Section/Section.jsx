@@ -25,28 +25,33 @@ const fetchUrlSongs = `${BASE_URL}/songs`;
 
 
 
-  useEffect(() => {
+useEffect(() => {
+  setTimeout(() => {
     axios
       .get(fetchUrlTop)
-      .then((res) => setTopAlbums(res.data))
-      .catch((err) => console.error("Error fetching top albums:", err));
-  }, []);
+      .then(res => setTopAlbums(res.data))
+      .catch(err => console.error("Error fetching top albums:", err));
+  }, 0);
+}, []);
 
- 
-  useEffect(() => {
+useEffect(() => {
+  setTimeout(() => {
     axios
       .get(fetchUrlNew)
-      .then((res) => setNewAlbums(res.data))
-      .catch((err) => console.error("Error fetching new albums:", err));
-  }, []);
+      .then(res => setNewAlbums(res.data))
+      .catch(err => console.error("Error fetching new albums:", err));
+  }, 0);
+}, []);
 
- 
-  useEffect(() => {
+useEffect(() => {
+  setTimeout(() => {
     axios
       .get(fetchUrlSongs)
-      .then((res) => setSongs(res.data))
-      .catch((err) => console.error("Error fetching songs:", err));
-  }, []);
+      .then(res => setSongs(res.data))
+      .catch(err => console.error("Error fetching songs:", err));
+  }, 0);
+}, []);
+
 
 
   const scrollSlider = (ref, direction) => {
