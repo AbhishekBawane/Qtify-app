@@ -16,12 +16,10 @@ export default function Section() {
   const sliderRefTop = useRef(null);
   const sliderRefNew = useRef(null);
   const sliderRefSongs = useRef(null);
-
-const BASE_URL = "https://qtify-backend-labs.crio.do";
-
-const fetchUrlTop = `${BASE_URL}/albums/top`;
-const fetchUrlNew = `${BASE_URL}/albums/new`;
-const fetchUrlSongs = `${BASE_URL}/songs`;
+  
+  const fetchUrlTop = "https://qtify-backend.labs.crio.do/albums/top";
+  const fetchUrlNew = "https://qtify-backend.labs.crio.do/albums/new";
+  const fetchUrlSongs = "https://qtify-backend.labs.crio.do/songs";
 
 
 
